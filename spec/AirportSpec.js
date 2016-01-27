@@ -8,7 +8,7 @@ describe('Airport', function() {
 	beforeEach(function() {
 		plane = jasmine.createSpy('plane');
 		weather = jasmine.createSpyObj('weather', ['isStormy']);
-		airport = new Airport();
+		airport = new Airport(weather);
 	});
 
 	it('has no planes by default', function() {
